@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --color-3b3e: #3B3E44;
+    --color-8487: #84878B;
+    --color-1414: #141416;
+    --color-2225: #222529;
+    --color-button: #3B71FE;
+}
+html{
+    font-family: 'DM Sans', sans-serif;
+}
