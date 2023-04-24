@@ -238,8 +238,9 @@
     margin-top: 148px;
     text-align: center;
     margin-bottom: 82px;
+    position: relative;
 }
-.search-place:nth-child(2){
+.search-place:nth-child(n+2){
     text-align: left;
 }
 .search-place h2{
@@ -419,4 +420,82 @@
 /* ***************** */
 .fe-desti__content span span img{
     margin-right: 10px;
+}
+
+/* fill="#B1B5C4" */
+/* top tour */
+.arrow-trans{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.arrow-left svg,
+.arrow-right svg{
+    fill:  #B1B5C4;
+}
+.arrow-left,
+.arrow-right{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #F4F5F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-trans span:hover{
+    background-color: #E6E8EC;
+}
+.arrow-trans span:hover svg{
+    fill: #84878B;
+}
+.tour-top__item{
+    width: 369px;
+    height: 495px;
+    background-image: url('./img/imagejapan.png');
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tour-top__item:nth-child(2){
+    background-image: url('./img/imagebali.png');
+}
+.tour-top__item:nth-child(2){
+    background-image: url('./img/imagespain.png');
+}
+.tour-top__place{
+    padding: 30px 0 0 30px;
+    backdrop-filter: blur(2px);
+}
+.tour-top__place h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #E9EBF3;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: rgba(20, 20, 22, 0.2);
+    display: inline-block;
+}
+.tour-top__content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 35px 30px;
+}
+.tour-top__content h3{
+    font-weight: 700;
+    font-size: 34px;
+    color: #FCFCFD;
+    text-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.tour-top__content h4{
+    font-weight: 400;
+    font-size: 16px;
+    color: #FCFCFD;
+    opacity: 0.9;
 }
